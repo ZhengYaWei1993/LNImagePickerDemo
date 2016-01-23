@@ -34,10 +34,13 @@
 
 #pragma mark - LNImagePickerView Delegate
 - (void)imagePickerView:(LNImagePickerView *)imagePickerView imageView:(UIImageView *)imageView{
-    NSLog(@"点击了第%ld张图片",imageView.tag);
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"你点击了第%ld张图片",imageView.tag + 1] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alertView show];
+
 }
 
 - (IBAction)buttonAction:(id)sender {
-     NSLog(@"总共选择了%ld张图片",[[imagePickerView photoAssets] count]);
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"总共选择了%ld张图片",[[imagePickerView photoAssets] count]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alertView show];
 }
 @end
