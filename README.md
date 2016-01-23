@@ -13,7 +13,15 @@ imagePickerView.delegate = self;
 
 [self.view addSubview:imagePickerView];
 
+![image1](https://github.com/onlylin/LNImagePickerDemo/blob/master/LNImagePickerDemo/image1.png)
 
+图片选择
+
+![image2](https://github.com/onlylin/LNImagePickerDemo/blob/master/LNImagePickerDemo/image2.png)
+
+图片浏览
+
+![image3](https://github.com/onlylin/LNImagePickerDemo/blob/master/LNImagePickerDemo/image3.png)
 
 #实现LNImagePickerViewDelegate代理协议
 - (void)imagePickerView:(LNImagePickerView *)imagePickerView imageView:(UIImageView *)imageView;
