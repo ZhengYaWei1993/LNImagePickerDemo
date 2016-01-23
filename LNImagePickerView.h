@@ -22,7 +22,7 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 
-@property (nonatomic, strong) NSMutableArray *photoAssets;
+@property (nonatomic,readonly , strong) NSMutableArray *photoAssets;
 
 @property (nonatomic, assign) NSInteger maxSelectCount;
 

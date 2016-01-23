@@ -20,6 +20,8 @@
     UIViewController *parentViewContrller;
 }
 
+@property (nonatomic,readwrite, strong) NSMutableArray *photoAssets;
+
 @end
 
 @implementation LNImagePickerView

@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "LNImagePickerView.h"
 
-@interface ViewController ()<LNImagePickerViewDelegate>
+@interface ViewController ()<LNImagePickerViewDelegate>{
+    LNImagePickerView *imagePickerView;
+}
 
 @end
 
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    LNImagePickerView *imagePickerView = [[LNImagePickerView alloc] initWithPointY:100.0f target:self];
+    imagePickerView = [[LNImagePickerView alloc] initWithPointY:100.0f target:self];
     imagePickerView.maxSelectCount = 4;
     imagePickerView.delegate = self;
     [imagePickerView setBackgroundColor:[UIColor whiteColor]];
@@ -35,4 +37,7 @@
     NSLog(@"点击了第%ld张图片",imageView.tag);
 }
 
+- (IBAction)buttonAction:(id)sender {
+     NSLog(@"总共选择了%ld张图片",[[imagePickerView photoAssets] count]);
+}
 @end
