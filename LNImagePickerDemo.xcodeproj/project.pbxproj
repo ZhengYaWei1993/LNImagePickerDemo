@@ -31,6 +31,9 @@
 		325226461C4F65710035C2F3 /* LNPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325226451C4F65710035C2F3 /* LNPhotoView.m */; };
 		32583C6B1C53D97B0027241D /* LNImagePickerController in Resources */ = {isa = PBXBuildFile; fileRef = 32583C6A1C53D97B0027241D /* LNImagePickerController */; };
 		32583C731C53DEB70027241D /* default_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32583C721C53DEB70027241D /* default_image.png */; };
+		32583C771C53E5890027241D /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32583C741C53E5890027241D /* image1.png */; };
+		32583C781C53E5890027241D /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32583C751C53E5890027241D /* image2.png */; };
+		32583C791C53E5890027241D /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 32583C761C53E5890027241D /* image3.png */; };
 		325A4A8E1C4C88ED001CB0B7 /* LNPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 325A4A8D1C4C88ED001CB0B7 /* LNPhotoCell.m */; };
 		327A09C41C4CAE0A00642489 /* LNPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A09C31C4CAE0A00642489 /* LNPhotoBrowserController.m */; };
 		327A09C91C4CBE4000642489 /* UIView+LNView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A09C81C4CBE4000642489 /* UIView+LNView.m */; };
@@ -95,6 +98,9 @@
 		325226451C4F65710035C2F3 /* LNPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPhotoView.m; sourceTree = "<group>"; };
 		32583C6A1C53D97B0027241D /* LNImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LNImagePickerController; sourceTree = "<group>"; };
 		32583C721C53DEB70027241D /* default_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_image.png; sourceTree = "<group>"; };
+		32583C741C53E5890027241D /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		32583C751C53E5890027241D /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		32583C761C53E5890027241D /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 		325A4A8C1C4C88ED001CB0B7 /* LNPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPhotoCell.h; sourceTree = "<group>"; };
 		325A4A8D1C4C88ED001CB0B7 /* LNPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPhotoCell.m; sourceTree = "<group>"; };
 		327A09BA1C4C920900642489 /* LNPhotoPickerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNPhotoPickerHeader.h; sourceTree = "<group>"; };
@@ -183,6 +189,9 @@
 		321B08C31C47F37D00FC70B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32583C741C53E5890027241D /* image1.png */,
+				32583C751C53E5890027241D /* image2.png */,
+				32583C761C53E5890027241D /* image3.png */,
 				321B08C41C47F37D00FC70B3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -413,14 +422,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3252263F1C4F34080035C2F3 /* image_selected@2x.png in Resources */,
+				32583C791C53E5890027241D /* image3.png in Resources */,
 				3252263E1C4F34080035C2F3 /* image_selected.png in Resources */,
 				321B08D31C47F37D00FC70B3 /* LaunchScreen.storyboard in Resources */,
 				325226391C4F33580035C2F3 /* image_unselect@2x.png in Resources */,
 				321B08D01C47F37D00FC70B3 /* Assets.xcassets in Resources */,
 				325226381C4F33580035C2F3 /* image_unselect.png in Resources */,
+				32583C781C53E5890027241D /* image2.png in Resources */,
 				32583C6B1C53D97B0027241D /* LNImagePickerController in Resources */,
 				3252263A1C4F33580035C2F3 /* image_unselect@3x.png in Resources */,
 				321B08FC1C47F4D600FC70B3 /* image_add@2x.png in Resources */,
+				32583C771C53E5890027241D /* image1.png in Resources */,
 				325226401C4F34080035C2F3 /* image_selected@3x.png in Resources */,
 				321B08CE1C47F37D00FC70B3 /* Main.storyboard in Resources */,
 				32583C731C53DEB70027241D /* default_image.png in Resources */,
