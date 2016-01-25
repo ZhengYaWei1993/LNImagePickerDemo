@@ -42,7 +42,7 @@
 - (void)drawRect:(CGRect)rect {
     self.imageView.tap = [LNTouchTap tapWithTapBlock:^(id sender) {
         LNPhotoLibaryController *photoLibaryController = [[LNPhotoLibaryController alloc] init];
-        photoLibaryController.maxSelectedCount = self.maxSelectCount;
+        photoLibaryController.maxSelectedCount = self.maxSelectCount - [self.photoAssets count];
         UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:photoLibaryController];
         [parentViewContrller presentViewController:navigation animated:YES completion:^{
             
