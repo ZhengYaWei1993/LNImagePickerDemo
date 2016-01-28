@@ -57,10 +57,11 @@
 }
 
 - (void)refreshView:(NSNotification*)notification{
+    int index = (int)[self.photoAssets count];
     [self.photoAssets addObjectsFromArray:notification.object];
     if ([self.photoAssets  count] > 0) {
         NSInteger count = [self.photoAssets count];
-        for (int i = 0; i < [self.photoAssets count]; i++) {
+        for (int i = index; i < [self.photoAssets count]; i++) {
             LNPhotoAsset *photoAsset = self.photoAssets[i];
             UIImageView *myImageView = [[UIImageView alloc] initWithImage:photoAsset.thumbImage];
             myImageView.frame = CGRectMake(10 + i % 4 *(10 + IMAGE_WIDTH), 10 + i / 4 * (IMAGE_WIDTH + 10), IMAGE_WIDTH, IMAGE_WIDTH);

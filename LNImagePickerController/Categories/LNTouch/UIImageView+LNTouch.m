@@ -12,7 +12,7 @@
 @implementation UIImageView (LNTouch)
 
 /***********点击事件***********/
-static const char LNTouchTapKey = '\0';
+
 
 - (void)setTap:(LNTouchTap *)tap{
     self.userInteractionEnabled = YES;
